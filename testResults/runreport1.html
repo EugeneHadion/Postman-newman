@@ -1,55 +1,9 @@
-newman
+<!DOCTYPE html>
+<html>
+<body>
 
-petstore
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
 
-□ pet
-└ Find pet by ID
-  GET http://petstore.swagger.io/v2/pet/123 [200 OK, 463B, 887ms]
-  √  Status code is 200
-
-└ Updates a pet in the store with form data
-  POST http://petstore.swagger.io/v2/pet/1337 [404 Not Found, 384B, 273ms]
-  1. Status code is 200
-
-└ Finds Pets by status
-  GET http://petstore.swagger.io/v2/pet/findByStatus?status=available [200 OK, 93.26kB, 493ms]
-  √  Status code is 200
-
-└ Finds Pets by tags
-  GET http://petstore.swagger.io/v2/pet/findByTags?tags=Large [200 OK, 328B, 263ms]
-
-└ Deletes a pet
-  DELETE http://petstore.swagger.io/v2/pet/321 [404 Not Found, 384B, 262ms]
-  2. Status code is 200
-
-┌─────────────────────────┬─────────────────────┬────────────────────┐
-│                         │            executed │             failed │
-├─────────────────────────┼─────────────────────┼────────────────────┤
-│              iterations │                   1 │                  0 │
-├─────────────────────────┼─────────────────────┼────────────────────┤
-│                requests │                   5 │                  0 │
-├─────────────────────────┼─────────────────────┼────────────────────┤
-│            test-scripts │                   4 │                  0 │
-├─────────────────────────┼─────────────────────┼────────────────────┤
-│      prerequest-scripts │                   0 │                  0 │
-├─────────────────────────┼─────────────────────┼────────────────────┤
-│              assertions │                   4 │                  2 │
-├─────────────────────────┴─────────────────────┴────────────────────┤
-│ total run duration: 2.6s                                           │
-├────────────────────────────────────────────────────────────────────┤
-│ total data received: 93.17kB (approx)                              │
-├────────────────────────────────────────────────────────────────────┤
-│ average response time: 435ms [min: 262ms, max: 887ms, s.d.: 242ms] │
-└────────────────────────────────────────────────────────────────────┘
-
-  #  failure         detail                                                   
-                                                                              
- 1.  AssertionError  Status code is 200                                       
-                     expected response to have status code 200 but got 404    
-                     at assertion:0 in test-script                            
-                     inside "pet / Updates a pet in the store with form data" 
-                                                                              
- 2.  AssertionError  Status code is 200                                       
-                     expected response to have status code 200 but got 404    
-                     at assertion:0 in test-script                            
-                     inside "pet / Deletes a pet"                             
+</body>
+</html>
