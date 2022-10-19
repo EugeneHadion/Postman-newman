@@ -1,0 +1,5 @@
+#Custom tasks
+.vscode
+
+node_modules
+
